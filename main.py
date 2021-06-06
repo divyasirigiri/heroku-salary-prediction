@@ -6,6 +6,7 @@ app = Flask(__name__)
 import joblib
 model = joblib.load('hiring_model.pkl')
 
+
 @app.route('/')
 def hello():
     return render_template('base.html')
