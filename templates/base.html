@@ -3,14 +3,13 @@
 
     </head>
     <body>
-        <h1>Welcome</h1>
-        <p> this is a data science page</p>
+        <h1>Welcome to the Salary Prediction Page</h1>
         <form action ='predict' method = "post">
             <input type='number' name='experience' placeholder = 'experience' required = 'required'/>
             <input type='number' name='test_score' placeholder = 'test_score' required = 'required'/>
             <input type='number' name='interview_score' placeholder = 'interview_score' required = 'required'/>
             <button type='submit'> Predict </button>
-
+        <br>
         {{ prediction_text }}
         </form>
     </body>
